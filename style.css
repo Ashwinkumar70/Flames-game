@@ -1,0 +1,79 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #ff758c, #ff7eb3, #ff416c, #ff4b2b);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  animation: fadeIn 1.5s ease;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+}
+
+.form-box input, .form-box button {
+  padding: 12px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1em;
+}
+
+.form-box input {
+  width: 220px;
+  text-align: center;
+}
+
+.form-box button {
+  background: #ff4b2b;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.form-box button:hover {
+  transform: scale(1.1);
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+  60% { transform: translateY(-10px); }
+}
